@@ -17,7 +17,7 @@ add_executable(leds
 )
 
 # Add pico_stdlib library which aggregates commonly used features
-target_link_libraries(leds pico_stdlib)
+target_link_libraries(leds pico_stdlib pico_multicore)
 
 pico_enable_stdio_usb(leds 1)
 pico_enable_stdio_uart(leds 0)
